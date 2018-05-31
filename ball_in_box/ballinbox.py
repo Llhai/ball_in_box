@@ -2,8 +2,8 @@ import math
 import random
 from .validate import validate
 
-MOVE1=0.01  #第一次搜索的步长
-MOVE2=0.001 #第二次搜索的步长
+MOVE1=0.001  #第一次搜索的步长
+MOVE2=0.0001 #第二次搜索的步长
 
 __all__ = ['ball_in_box']
 E=1e-8
@@ -16,6 +16,7 @@ def ball_in_box(m=5, blockers=[(0.5, 0.5), (0.5, -0.3)]):
     """
 
     # The following is an example implementation.
+    print('start searching')
     circles = []
     for i in range(0,m):
         maxCir=[0,0,0]
